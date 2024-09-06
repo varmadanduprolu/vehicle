@@ -10,6 +10,6 @@ import java.lang.annotation.Native;
 
 public interface UserRepository extends JpaRepository<Users,Integer> {
 
-     
+    boolean existsUsersByEmail(String email);
     public boolean existsUsersByUserId(Integer id);
 }

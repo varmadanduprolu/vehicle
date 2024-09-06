@@ -61,8 +61,15 @@ public class UserDaoImpl implements UserDao{
         return userRepository.existsUsersByUserId(id);
     }
 
+    @Override
+    public boolean existsUsersByEmail(String email) {
+        return userRepository.existsUsersByEmail(email);
+    }
+
     public String encription(String pass){
         String password=pass;
         return password;
     }
+
+
 }

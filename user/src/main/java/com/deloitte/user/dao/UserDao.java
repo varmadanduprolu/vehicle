@@ -14,4 +14,6 @@ public interface UserDao {
 
    public String updateUserDetails(Integer id, Users users);
    public boolean existsUsersByUserId(Integer id);
+
+   boolean existsUsersByEmail(String email);
 }
